@@ -72,17 +72,32 @@ main{
 .nav-logo-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .nav-logo img{
     height: auto;
     width: 8rem;
 }
-.nav-en-bn-button{
+.nav-en-bn-button-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 55px;
+    height: 21px;
+    border-radius: 5px;
+    background-color: var(--boldColor);
+    color: var(--whity);
+    padding: 0.5rem;
+    font-size: 13px;
 }
-
+.en-btn{
+    border-right: 1px solid var(--pinky);
+    padding: 3px;
+    margin: 3px;
+}
+.bn-btn{
+    padding: 3px;
+}
 .nav-bar-menu{
     margin-top: 1rem;
     display: flex;
@@ -158,17 +173,23 @@ display: none;
 .process{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 .process-card{
+    width: 232px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 2rem;
-    padding: 1rem;
     color: var(--lightColor);
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: -0.6px -0.8px 22.5px 2.5px rgba(10, 34, 57, 0.06);
+    background-color: var(--whity);
 }
 .process-card__image{
     width: 4rem;
@@ -192,16 +213,28 @@ display: none;
 .success-heading{
     text-align: center;
 }
+.success-stories-top-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .top-row-arrow{
     display: none;
 }
+
 .top-row-card{
+    width: 232px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    padding: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: -0.6px -0.8px 22.5px 2.5px rgba(10, 34, 57, 0.06);
+    background-color: var(--whity);
 }
 .success-story-profile-section{
     text-align: center;
@@ -222,10 +255,23 @@ display: none;
 
 
  .success-stories-bottom-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
      text-align: center;
  }
 .success-stories-card{
+    width: 232px;
+    margin: 1rem;
     padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: -0.6px -0.8px 22.5px 2.5px rgba(10, 34, 57, 0.06);
+    background-color: var(--whity);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
  .success-stories-card-text p{
@@ -308,7 +354,6 @@ display: none;
     padding: 0 0.3rem;
 }
 .faq-card-upper-container{
-    height: 1.2rem;
     display: flex;
     align-items: center;
 }
@@ -336,6 +381,7 @@ display: none;
 /* Contact Section  */
 .contact-container{
     font-family: Mulish;
+    margin-top: 1rem;
 }
 
 .contact-container-image{
