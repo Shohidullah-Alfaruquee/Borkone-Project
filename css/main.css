@@ -1,0 +1,415 @@
+/* Variables  */
+:root {
+    --pinky : #ea1186;
+    --whity : #ffffff;
+    --boldColor: #0a2138;
+    --lightColor: #838383;
+    --starColor: rgb(255,192,3);
+}
+
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+@font-face{
+    font-family: "BadUnicornDemo";
+    src: url("../fonts/BadUnicornDemoRegular-BVWx.ttf");
+}
+/* common style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+    font-size: 13px;
+    font-family: Mulish;
+}
+.section-heading{
+    margin: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--boldColor);
+    text-align: center;
+    text-transform: uppercase
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--boldColor);
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 16px;
+    margin: 10px 0;
+}
+p{
+    font-family: Mulish;
+}
+.btn{
+    background-color: var(--pinky);
+    color: var(--whity);
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+}
+
+/* Nav-bar style started  */
+main{
+    margin: 1rem;
+
+}
+.nav-bar{
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar a{
+    text-decoration: none;
+}
+.nav-logo-container{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-logo img{
+    height: auto;
+    width: 8rem;
+}
+.nav-en-bn-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-menu{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar-menu__hidden{
+    display: none;
+}
+.nav-bar-menu a{
+    display: block;
+    margin-top: 2px;
+    padding: 0.3rem;
+    text-align: center;
+    background: var(--pinky);
+    color: var(--whity);
+    border-radius: 0.3rem;
+}
+
+.nav-bar-menu a:hover{
+    background: var(--whity);
+    color: var(--pinky);
+    border: 1px solid var(--pinky)
+}
+
+
+
+/* Hero section started  */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wedding-image{
+    width: 100%;
+    height: auto;
+}
+.hero-text{
+    text-align: center;
+    position: relative;
+}
+.hero-text-top-right__image, .hero-text-bottom-right__image, .hero-text-top-left__image, .hero-text-bottom-left__image {
+display: none;
+}
+
+.engage-heading{
+    /* font-family: 'Bad Unicorn DEMO', sans-serif;  */
+    font-family: "BadUnicornDemo";
+    font-size: 54px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;                                     
+}
+.btn-register{
+    width: 9.5rem;
+    height: 3rem;
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Section: Our Process Started  */
+
+.process-heading{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: calc(2rem + 2vw);
+
+}
+.process{
+    display: flex;
+    flex-direction: column;
+
+}
+.process-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: var(--lightColor);
+}
+.process-card__image{
+    width: 4rem;
+    height: 4.3rem;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.process-card h2{
+    margin: 1rem 0;
+    font-family: Mulish;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--boldColor);
+}
+.process-card p{
+    padding: 1rem;
+}
+
+/* Success Story Section Started  */
+.success-heading{
+    text-align: center;
+}
+.top-row-arrow{
+    display: none;
+}
+.top-row-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 1rem;
+}
+.success-story-profile-section{
+    text-align: center;
+}
+.story-teller-image{
+    width: 100px;
+}
+.success-story-text{
+    text-align: center;
+}
+.success-story-text p{
+    text-align: justify;
+}
+.rating-star{
+    width: 20px;
+}
+
+
+
+ .success-stories-bottom-row{
+     text-align: center;
+ }
+.success-stories-card{
+    padding: 0.5rem;
+    overflow: hidden;
+}
+ .success-stories-card-text p{
+     text-align: justify;
+ }
+
+
+ /* Section who-we-are started  */
+
+ .who-we-are{
+     text-align: center;
+ }
+ .who-we-are-heading{
+     margin: 3rem 0;
+ }
+ .card-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+.profile-card{
+    width: 232px;
+    height: 269px;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: -0.6px -0.8px 22.5px 2.5px rgba(10, 34, 57, 0.06);
+    background-color: var(--whity);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .who-we-are-profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px var(--pinky)
+ }
+
+ .profile-name{
+    font-family: Mulish;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--boldColor);
+ }
+
+
+/* Sponsor Section */
+.sponsor-card-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor-card{
+    width: 4.25rem;
+    height: 5.25rem;
+
+}
+.sponsor-card img{
+    width: 100%;
+    height: auto;
+}
+
+/* FAQ section started  */
+.faq-card-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.faq-card{
+    margin: 0.2rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: var(--whity);
+    padding: 0 0.3rem;
+}
+.faq-card-upper-container{
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.faq-card-arrow{
+    width: 1.2rem;
+}
+.faq-card:hover{
+    cursor: pointer;
+}
+.svg-arrow {
+    fill: var(--pinky);
+}
+.faq-card-srno-container{
+    display: none;
+}
+
+.faq-card-text{
+    padding: 0 0 0 0.3rem;
+}
+.faq-card-bottom-container-hide{
+    display: none;
+}
+
+
+/* Contact Section  */
+.contact-container{
+    font-family: Mulish;
+}
+
+.contact-container-image{
+    display: none;
+}
+.contact-container-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-input{
+    height: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 28.5px 1.5px rgb(10 34 57 / 7%);
+    background-color: var(--whity);
+    border: none;
+    padding: 12px;
+    font-family: Mulish;
+
+}
+
+.contact-message-input{
+    height: 132px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 28.5px 1.5px rgba(10, 34, 57, 0.07);
+    background-color:var(--whity);
+    font-family: Mulish;
+}
+.contact-container-btn{
+    margin-top: 26px;
+    padding: 1.2rem;
+    opacity: 0.9;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -0.6px -0.8px 12.8px 2.3px rgba(233, 20, 132, 0.1);
+    background-color: var(--pinky);
+    color: var(--whity);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Footer Section  */
+
+footer{
+    background-color: var(--boldColor);
+    color: var(--whity);
+    margin-top: 1rem;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.copy-right-text{
+    order: 2;
+    text-align: center;
+}
+.social-media-icon-container{
+    order: 1;
+    display: flex;
+    justify-content: center;
+}
+.social-media-icon-div{
+    background-color: var(--whity);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+.social-media-icon{
+    fill: var(--boldColor);
+    width: 100%;
+}
