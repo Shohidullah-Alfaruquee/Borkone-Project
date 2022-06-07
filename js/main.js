@@ -11,6 +11,19 @@ const navMenuHideShow = () =>{
 }
 
 
+const navMenus = document.querySelectorAll(".nav-menu-btn");
+const logInMenu = document.querySelector("#login-menu")
+navMenus.forEach(navMenu => {
+    navMenu.addEventListener('mouseover', ()=>{
+        logInMenu.className = "login-btn btn-hover";
+        navMenu.className = "nav-menu-btn btn-unhover"
+    });
+    navMenu.addEventListener('mouseout', ()=>{
+        logInMenu.className = "login-btn btn-unhover";
+        navMenu.className = "nav-menu-btn btn-hover"
+    });
+})
+
 // FAQ Section 
 const upperContainer = document.querySelectorAll('.faq-card-upper-container');
 upperContainer.forEach((upperContainer)=>{
@@ -35,3 +48,50 @@ upperContainer.forEach((upperContainer)=>{
         }
     })
 })
+
+
+// Registraion Page functionality 
+
+
+// Photo upload functionality 
+const maleImage = document.getElementById("male-image");
+const chooseMaleImage = document.getElementById("choose-male-image");
+chooseMaleImage.addEventListener('change', (event)=>{
+    maleImage.src = URL.createObjectURL(event.target.files[0])
+    maleImage.onload = function() {
+        URL.revokeObjectURL(maleImage.src)
+    }
+})
+const femaleImage = document.getElementById("female-image");
+const chooseFemaleImage = document.getElementById("choose-female-image");
+chooseFemaleImage.addEventListener('change', (event)=>{
+    femaleImage.src = URL.createObjectURL(event.target.files[0])
+    femaleImage.onload = function() {
+        URL.revokeObjectURL(femaleImage.src)
+    }
+})
+
+const uploadBtns = document.querySelectorAll('.upload-icon');
+uploadBtns.forEach(uploadBtn =>{
+    uploadBtn.addEventListener('click', ()=>{
+        uploadBtn.parentElement.children[1].click();
+    })
+})
+
+
+
+
+// Submit and Cancel Button functionality 
+
+const btnCancel = document.getElementById("btn-cancel");
+const btnSubmit = document.getElementById("btn-submit");
+
+btnCancel.addEventListener("mouseover", ()=>{
+    btnSubmit.className = "btn btn-reg btn-hover";
+})
+
+btnCancel.addEventListener("mouseout", ()=>{
+    btnSubmit.className = "btn btn-reg btn-submit";
+})
+
+

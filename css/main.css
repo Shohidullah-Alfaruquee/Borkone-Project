@@ -2,6 +2,7 @@
 :root {
     --pinky : #ea1186;
     --whity : #ffffff;
+    --body : #f8f8f8;
     --boldColor: #0a2138;
     --lightColor: #838383;
     --starColor: rgb(255,192,3);
@@ -133,13 +134,16 @@ main{
 }
 .wedding-image{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .hero-text{
     text-align: center;
     position: relative;
 }
-.hero-text-top-right__image, .hero-text-bottom-right__image, .hero-text-top-left__image, .hero-text-bottom-left__image {
+.hero-text-top-right__image, 
+.hero-text-bottom-right__image, 
+.hero-text-top-left__image, 
+.hero-text-bottom-left__image {
 display: none;
 }
 
@@ -160,6 +164,7 @@ display: none;
     font-family: Muli;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* Section: Our Process Started  */
@@ -458,4 +463,66 @@ footer{
 .social-media-icon{
     fill: var(--boldColor);
     width: 100%;
+}
+
+
+
+/* Home Page Ended Here  */
+
+/* Registration Page Started  */
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.image-container-image{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+.image-container-image img{
+    width: 100px;
+}
+
+.upload-icon{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--pinky);
+    border-radius: 0.3rem;
+    margin-top: 0.4rem;
+    padding: 0.2rem;
+    color: var(--boldColor);
+    
+}
+.upload-icon svg{
+    width: 21px;
+    height: 21px;
+    fill: rgba(10, 33, 56, 0.7);
+}
+.upload-icon p{
+    font-weight: 600;
+    color: rgba(10, 33, 56, 0.7);
+    margin-left: 0.1rem;
+}
+
+
+.biodata-heading-container{
+    display: flex;
+}
+
+.icon-image{
+    width: 19px;
+    height: 23px;
+}
+.star-icon{
+    width: 10px;
+    height: 9px;
+}
+.agree-checkbox a{
+    color: var(--pinky);
+    text-decoration: none;
 }
