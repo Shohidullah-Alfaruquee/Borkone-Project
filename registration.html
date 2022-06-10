@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/style.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 768px)">
     <title>Registration</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <nav class="nav-bar">
             <div class="nav-logo-container">
                 <div class="nav-logo">
-                    <a href="/"><img src="../images/logo.png" alt="Borkone logo"></a>
+                    <a href="/"><img src="images/logo.png" alt="Borkone logo"></a>
                 </div>
                 <div class="nav-en-bn-button-container">
                     <div class="en-btn">EN</div>
@@ -28,10 +28,12 @@
                 </div>
             </div>
             <div class="nav-bar-menu__hidden" id="nav-menu">
-                <a class="nav-menu-btn" href="/">HOME</a>
-                <a class="nav-menu-btn" href="#">SUBMIT INFO</a>
-                <a class="nav-menu-btn" href="#">BLOG</a>
-                <a class="nav-menu-btn" href="#">FAQ</a>
+                <div id="nav-menu-container">
+                    <a class="nav-menu-btn" href="/">HOME</a>
+                    <a class="nav-menu-btn" href="#">SUBMIT INFO</a>
+                    <a class="nav-menu-btn" href="#">BLOG</a>
+                    <a class="nav-menu-btn" href="#">FAQ</a>
+                </div>
                 <a href="#" id="login-menu" class="login-btn btn-unhover">LOGIN</a>
             </div>
         </nav>
@@ -264,6 +266,6 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

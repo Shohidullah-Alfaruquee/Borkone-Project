@@ -28,6 +28,9 @@ const navMenuContainer = document.getElementById('nav-menu-container')
 navMenuContainer.addEventListener("mouseover", ()=>{
     logInMenu.className = "login-btn btn-hover";
 })
+navMenuContainer.addEventListener("mouseout", ()=>{
+    logInMenu.className = "login-btn btn-unhover";
+})
 
 // FAQ Section 
 const upperContainer = document.querySelectorAll('.faq-card-upper-container');
