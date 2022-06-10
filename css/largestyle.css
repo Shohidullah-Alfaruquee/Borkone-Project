@@ -15,7 +15,10 @@ main{
 .hero-text h1{
     font-size:68px;
 }
-
+.engage-heading{
+    font-size: 54px;
+                                     
+}
 .hero-text-top-right__image{
     width: 59px;
     height: 61.3px;

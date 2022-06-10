@@ -146,6 +146,10 @@ nav a{
 .hero-text h1{
     font-size: 5.4vw
 }
+.engage-heading{
+    font-size: calc(40px + 1vw);
+                                     
+}
 .hero-text-top-right__image, 
 .hero-text-bottom-right__image, 
 .hero-text-top-left__image, 

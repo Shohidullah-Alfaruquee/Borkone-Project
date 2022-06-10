@@ -150,13 +150,8 @@ display: none;
 .engage-heading{
     /* font-family: 'Bad Unicorn DEMO', sans-serif;  */
     font-family: "BadUnicornDemo";
-    font-size: 54px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;                                     
+    font-size: 40px;
+                                     
 }
 .btn-register{
     width: 9.5rem;
