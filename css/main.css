@@ -437,6 +437,7 @@ display: none;
     color: var(--whity);
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
