@@ -522,11 +522,15 @@ footer{
 
 .biodata-heading-container{
     display: flex;
+    align-items: center;
 }
 
 .icon-image{
     width: 19px;
     height: 23px;
+}
+.biodata-heading{
+    margin: 0 0.1rem 0 0.5rem;
 }
 .star-icon{
     width: 10px;
