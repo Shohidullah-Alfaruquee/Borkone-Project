@@ -44,6 +44,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     
 
 }
@@ -56,6 +57,9 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    box-shadow: -0.6px -0.8px 4px 0 rgba(0, 0, 0, 0.25);
+    height: 80px;
 }
 
 /* Nav-bar style started  */
@@ -66,11 +70,12 @@ header{
     padding: 0 3rem;
     max-width: 1178px;
     width: 100%;
+    margin-top: 0;
 }
 nav a{
     color: var(--boldColor);
     font-family: Muli;
-    font-size: 1.3vw;
+    font-size: calc(10px + 0.4vw);
     font-weight: 300;
 }
 .nav-logo-container{
@@ -81,11 +86,7 @@ nav a{
     width: 13.625rem;
     margin-bottom: 0.75rem;
 }
-.nav-en-bn-button-container{
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-}
+
 .nav-bar-menu-btn{
     display: none;
 }
@@ -144,7 +145,7 @@ nav a{
     justify-content: end;
 }
 .hero-text h1{
-    font-size: 5.4vw
+    font-size: 4.5vw;
 }
 .engage-heading{
     font-size: calc(40px + 1vw);
@@ -204,7 +205,7 @@ nav a{
 }
 .process-card h2{
     margin: 1rem 0;
-    font-size: 1.94vw;
+    font-size: 1.8vw;
 }
 
 /* Success Story Section Started  */
@@ -218,9 +219,11 @@ nav a{
     display: flex;
     align-items: center;
 }
-.top-row-arrow img{
-    width: 7vw;
-    height: 12vw;
+.top-row-arrow svg{
+    width: 42px;
+    height: 72x;
+    fill: var(--pinky);
+    opacity: 0.5;
 }
 .top-row-card{
     flex-direction: row;
@@ -253,11 +256,14 @@ nav a{
 }
 .card-text-heading{
     font-size: calc(10px + 0.6vw);
+    text-align: left;
 }
-
+.rating-star-container{
+    text-align: left;
+}
 .rating-star{
     width: 1.8vw;
-    max-width: 25px;
+    max-width: 20px;
 }
 .success-stories-bottom-row{
     flex-direction: row;
@@ -266,10 +272,10 @@ nav a{
 .success-stories-card{
     margin: 0;
     flex-direction: row;
-    flex-basis:38vw ;
-    max-width:521px;
+    flex-basis:43vw ;
+    max-width:364px;
     height: 17vw;
-    max-height: 233px;
+    max-height: 137px;
     border-radius: 27.7px;
     box-shadow: -0.6px -0.8px 26.3px 8.8px rgba(10, 34, 57, 0.13);
     overflow: hidden;
@@ -282,7 +288,7 @@ nav a{
 }
 .success-stories-card-image img{
     width: 9vw;
-    max-width: 123.5px;
+    max-width: 70px;
     margin-top: 0.5rem;
 }
 .success-stories-card-image h2{
@@ -300,14 +306,18 @@ nav a{
     text-align: center;
 }
 .success-stories-card-text {
-    padding-top: 0.5rem;
+    padding-top: 0.1rem;
     width: 28vw;
     max-width: 384px;
     height: 100%;
     overflow: hidden;
 }
+.success-stories-card-text h3{
+    font-size:calc(0.5rem + 0.8vw);
+    text-align: left;
+}
 .success-stories-card-text p{
-    font-size: 1.3vw;
+    font-size: 0.8rem;
     font-weight: 300;
     padding: 0 0.5rem 0.5rem 0.5rem;
 }
@@ -551,4 +561,59 @@ footer{
 
 .agree-checkbox{
     font-size: 1.4rem;
+}
+
+
+
+/* Blog Page Design Started  */
+
+/* Blog page: Hero section started */
+
+.blog-image-container{
+    display: flex;
+    justify-content: center;
+}
+.blog-image{
+    width: 45vw;
+    max-width: 450px;
+    height: auto;
+}
+.blog-text{
+    text-align: center;
+    padding: 1.2rem 0;
+
+}
+.blog-text h1{
+    font-size:calc(12px + 3.5vw);
+    margin-left: 2vw;
+    text-align: justify;
+}
+
+/* Section Post Container  */
+
+
+
+
+.post-writer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+
+}
+.post-time{
+    border-right: 1px solid var(--pinky);
+}
+.post-heading-container{
+    flex-direction: row;
+}
+.post-writer-image img{
+    width: 73px;
+    height: 73px;
+}
+
+.post-image img{
+    display: inline-block;
+    width: 214px;
+    height: 214px;
 }

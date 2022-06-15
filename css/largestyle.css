@@ -1,10 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main{
     width: 1178px;
 }
 
 .section-heading{
     margin: 100px 0 100px 0;
-    font-size: 58px;
+    font-size: 53px;
 }
 
 /* Section hero started  */
@@ -13,7 +19,7 @@ main{
     padding: 0 44px 0 100px;
 }
 .hero-text h1{
-    font-size:68px;
+    font-size:61px;
 }
 .engage-heading{
     font-size: 54px;
@@ -47,16 +53,16 @@ main{
     flex-basis: 300px;
 }
 .process-card h2{
-    font-size: 28px;
+    font-size: 27px;
 }
 
 
 
 /* Success Story Section Started  */
 
-.top-row-arrow img{
-    width: 82.46px;
-    height: 141.36px;
+.top-row-arrow svg{
+    width: 42px;
+    height: 72x;
 }
 .top-row-card{
     font-size: 1rem;
@@ -112,10 +118,10 @@ main{
     height: 100%;
 }
 .success-stories-card-text h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .success-stories-card-text p{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /* Who We Are section started  */
@@ -136,3 +142,97 @@ main{
     font-size: 18px;
 }
 
+
+
+
+
+
+/* Blog Page Started  */
+
+
+/* Section Hero  */
+.blog-image-container{
+    width: 494px;
+    height: 297px;
+}
+
+.blog-image{
+    width: 100%;
+    height: 100%;
+}
+.blog-text{
+    text-align: center;
+    padding: 0 0;
+    width: 681px;
+    margin-left: 61px;
+
+}
+.blog-text h1{
+    font-size:69px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Section Post Container  */
+.post{
+    padding-top: 1.5rem;
+}
+.post-container{
+    margin-top: 100px;
+}
+.post-writer-container{
+    display: flex;
+}
+
+.post-writer h4{
+    font-size: 28px;
+    font-style: italic;
+    color: var(--boldColor);
+    font-weight: normal;
+
+}
+.post-time-container{
+    display: flex;
+}
+.post-time-container p{
+    font-size: 12px;
+    font-style: italic;
+}
+.post-time{
+    border-right: 1px solid var(--pinky);
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.post-heading-container{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;;
+}
+.post-heading-text{
+    text-align: left;
+
+}
+.post-image{
+    padding-top: 20px;
+}
+.post-image img{
+    width: 214px;
+    height: 214px;
+}
+.post-writer-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.post-writer-image img{
+    width: 73px;
+    height: 73px;
+}
+.post-heading-text h2{
+    font-size: 51px;
+    font-style: normal;
+    text-align: left;
+    line-height: normal;
+
+}
